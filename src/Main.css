@@ -1,0 +1,9 @@
+.Main{
+    position: absolute;
+    top: 6vh;
+    bottom: 6vh;
+    left: 3.5vw;
+    right: 3.5vw;
+    overflow: hidden;
+    background-color: cyan;
+}
