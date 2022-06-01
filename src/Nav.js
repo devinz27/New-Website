@@ -11,11 +11,14 @@ import React, {useState} from 'react'
 // }
 
 
-function Nav() {
-    const [selected, setSelected] = useState('Home');
-    function handleClick(list){
-        setSelected(list.value);
-    }
+
+function Nav({handlePageSwitch}) {
+  const [selected, setSelected] = useState('Home');
+  function handleClick(list){
+    setSelected(list.value);
+    handlePageSwitch(list.value)
+  }
+
     const buttonList  = [{value:'Home'}, {value:'About'}, {value:'Contact'}]
   return (
     <div className="Nav">
@@ -27,7 +30,8 @@ function Nav() {
                 <button
                     onClick={()=>
                     handleClick(list)}
-                    class={(selected === list.value  ? 'pressed ' : 'notpressed ') + 'navbutton'}
+                    key={list.value}
+                    className={(selected === list.value  ? 'pressed ' : 'notpressed ') + 'navbutton'}
                 >
                     {list.value}
                 </button>

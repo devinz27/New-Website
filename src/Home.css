@@ -1,0 +1,24 @@
+
+.Home{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+
+}
+
+.home-wrapper{
+    padding-left: 6vw;
+}
+
+h1{
+    margin:0;
+}
+
+.line{
+    display: inline-block;
+    width: 70px;
+    height: 5px;
+    background-color: #333;
+    margin-bottom: 30px;
+}
