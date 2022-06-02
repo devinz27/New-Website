@@ -22,3 +22,16 @@ h1{
     background-color: #333;
     margin-bottom: 30px;
 }
+
+.title{
+    width:100%;
+}
+
+.type{
+    /* color:white; */
+}
+
+.type::after{
+    content: "|";
+    transition-duration: 0.1s;
+}

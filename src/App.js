@@ -2,7 +2,7 @@ import './App.css';
 import Nav from './Nav';
 import Footer from './Footer';
 import Main from './Main'
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 
 
 
