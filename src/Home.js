@@ -5,17 +5,17 @@ function Home() {
   return (
     <div className="Home">
       <div className="home-wrapper">
-        <h1>DEVIN ZHOU</h1>
-        <span className="line"></span>
-        {/* <div className="title"> */}
+        <h1 className="name">DEVIN ZHOU</h1>
+        <span className="home-line"></span>
         <Typewriter
           options={{
-            strings: ["Hello"],
+            strings: ["CS Student", "Software Engineer","Food Enjoyer"],
             autoStart: true,
             loop: true,
+            delay: 100,
           }}
         ></Typewriter>
-        {/* </div> */}
+        <button className="home-connect">Get in Touch</button>
       </div>
     </div>
   );
