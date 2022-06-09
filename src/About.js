@@ -53,7 +53,7 @@ function About(){
                 </div>
                 <div className="experiences">
                     <div className="experience-wrapper">
-                    <div className="interests">
+                         <div className="interests">
                             <div className="interests-title">
                                 <h2>INTERESTS</h2>
                                 <span className="interests-line"></span>
@@ -75,7 +75,6 @@ function About(){
                                     Watching Movies
                                 </li>
                             </ul>
-            
                         </div>
                         <div className="experience-list">
                             <div className="experience-title">
