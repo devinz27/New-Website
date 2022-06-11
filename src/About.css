@@ -65,7 +65,7 @@
 
 .first-li{
     font-weight: bold;
-    min-width: 6vw;
+    min-width: 100px;
     display:inline-block;
 }
 
