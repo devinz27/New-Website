@@ -9,7 +9,6 @@ import React, {useState} from 'react';
 function App() {
   const [page, setPage] = useState('Home');
 
-
   const callBackParent = (value) => {
     setPage(value);
   }

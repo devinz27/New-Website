@@ -1,6 +1,31 @@
 import "./About.css";
+import { useEffect, useState } from "react";
+
+function DateFact(url) {
+  const [fact, setFact] = useState({ data: null, loading: true });
+  useEffect(() => {
+    setFact({ data: null, loading: true });
+    fetch(url)
+      .then((response) => response.text())
+      .then((text) => {
+        setFact({ data: text, loading: false });
+      });
+  }, [url]);
+  return fact;
+}
+
+function GetDate() {
+  let today = new Date();
+  let mm = today.getMonth() + 1;
+  let dd = today.getDate();
+  today = mm + "/" + dd;
+  return today;
+}
 
 function About() {
+  const fact = DateFact("http://numbersapi.com/" + GetDate() + "/date");
+
+  console.log(fact);
   return (
     <div className="About">
       <div className="about-wrapper">
@@ -104,6 +129,12 @@ function About() {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+        <div className="fact">
+          <div className="fact-text">
+            <h2>DAILY FACT</h2>
+            <p>{fact.loading === false ? fact.data : ""}</p>
           </div>
         </div>
       </div>
