@@ -1,55 +1,55 @@
-.Footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 6vh;
-    /* width:100vw; */
-    line-height: 70px;
-    background-color: #fff;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 3.5vw;
+.Footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6vh;
+  /* width:100vw; */
+  line-height: 70px;
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.5vw;
 }
-.footer-wrapper{
-    height:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-wrapper{
-    /* height:2.5vw; */
-    height:100%;
-    width:10%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-
+.footer-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.react, .magic{
-    height:30%;
+.icon-wrapper {
+  /* height:2.5vw; */
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.facebook{
-    cursor:pointer;
-    height:30%;
-  }
+.react,
+.magic {
+  height: 30%;
+}
 
-  .instagram{
-    cursor:pointer;
-    height:30%;
-  }
+.facebook {
+  cursor: pointer;
+  height: 30%;
+}
 
-  .linkedin{
-    cursor:pointer;
-    height:30%;
-  }
+.instagram {
+  cursor: pointer;
+  height: 30%;
+}
 
-  .github{
-    cursor:pointer;
-    height:30%;
-  }
+.linkedin {
+  cursor: pointer;
+  height: 30%;
+}
+
+.github {
+  cursor: pointer;
+  height: 30%;
+}
