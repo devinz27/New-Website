@@ -27,14 +27,32 @@
 .contact-squares {
   display: flex;
   width: 100%;
+  
 }
 
 .contact-squares .contact-square {
+  width:33.33333333%;
+  box-sizing: border-box;
 }
 
 .contact-squares .inner-square {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.07);
+  padding:1.5vw;
+  margin:0.5vw;
+  text-align: center;
+
 }
 
-.location {
-  width: 10%;
+.inner-square a {
+  word-break:break-all;
+  text-decoration: none;
+}
+
+.inner-square img {
+  margin-bottom: 5px;
 }

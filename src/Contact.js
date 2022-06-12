@@ -22,19 +22,21 @@ function Contact() {
           <div className="contact-square">
             <div className="inner-square">
               <img
-                src={require("./static/location.png")}
-                alt="location"
-                className="location"
+                src={require("./static/email.png")}
+                alt="email"
+                className="email"
               />
-              <span>devinzhou101@gmail.com</span>
+              <span>
+                <a href="?">devinzhou101@gmail.com</a>
+              </span>
             </div>
           </div>
           <div className="contact-square">
             <div className="inner-square">
               <img
-                src={require("./static/location.png")}
-                alt="location"
-                className="location"
+                src={require("./static/phone.png")}
+                alt="phone"
+                className="phone"
               />
               <span>416-819-0365</span>
             </div>
