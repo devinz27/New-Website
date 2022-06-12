@@ -27,32 +27,87 @@
 .contact-squares {
   display: flex;
   width: 100%;
-  
+  margin-bottom: 30px;
 }
 
 .contact-squares .contact-square {
-  width:33.33333333%;
+  width: 33.33333333%;
   box-sizing: border-box;
 }
 
 .contact-squares .inner-square {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,.07);
-  padding:1.5vw;
-  margin:0.5vw;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  padding: 1.5vw;
+  margin: 0.5vw;
   text-align: center;
-
 }
 
 .inner-square a {
-  word-break:break-all;
+  word-break: break-all;
   text-decoration: none;
 }
 
 .inner-square img {
   margin-bottom: 5px;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+}
+
+.left-contact-form {
+  width: 50%;
+  padding-right: 15px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.right-contact-form {
+  width: 50%;
+  padding-left: 15px;
+}
+
+.input-field {
+  font-family: "Poppins";
+  margin-bottom: 2vh;
+  padding: 1vh;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  background-color: transparent;
+  letter-spacing: 1.4px;
+}
+textarea {
+  height: 120px;
+}
+
+.form-submit {
+  /* width: 70%;
+  font-size: 16px;
+  /* transition: all 0.3s ease; */
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1vh 2vh;
+  border: 2px solid black;
+}
+.form-submit:hover {
+  transition: all 0.3s ease;
+  background-color: white;
+  color: black;
+}
+
+b .Contact h1 {
+  font-size: 5vh;
+  padding: 0;
+  margin-bottom: 2vh;
 }
