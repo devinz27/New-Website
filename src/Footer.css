@@ -3,7 +3,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 6vh;
+  height: 70px;
   /* width:100vw; */
   line-height: 70px;
   background-color: #fff;
@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3.5vw;
+  padding: 0 70px;
 }
 .footer-wrapper {
   height: 100%;

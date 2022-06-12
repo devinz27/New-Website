@@ -1,8 +1,12 @@
 .Contact {
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
 }
 
+.Contact::-webkit-scrollbar {
+  display: none;
+}
 .contact-wrapper {
   padding-left: 6vw;
   padding-right: 6vw;

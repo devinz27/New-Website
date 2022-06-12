@@ -1,35 +1,35 @@
-.Main{
-    position: absolute;
-    top: 6vh;
-    bottom: 6vh;
-    left: 3.5vw;
-    right: 3.5vw;
-    overflow: hidden;
-    background-color: #f6fbff;
+.Main {
+  position: absolute;
+  top: 70px;
+  bottom: 70px;
+  left: 70px;
+  right: 70px;
+  overflow: hidden;
+  background-color: #f6fbff;
 }
 
-.profile{
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 40%;
-    z-index: 15;
-    overflow:hidden;
+.profile {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  z-index: 15;
+  overflow: hidden;
 }
 
-.content{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 60%;
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
 }
 
-.image{
-    height:100%;
-    background-image: url(./static/profile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.image {
+  height: 100%;
+  background-image: url(./static/profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }

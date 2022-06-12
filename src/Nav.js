@@ -6,6 +6,7 @@ function Nav({ handlePageSwitch, selected }) {
   console.log("asd", selected);
   function handleClick(list) {
     // setSelected(list.value);
+    console.log("qer,", list);
     handlePageSwitch(list.value);
   }
 
@@ -16,7 +17,13 @@ function Nav({ handlePageSwitch, selected }) {
   ];
   return (
     <div className="Nav">
-      <div className="logo">
+      <div
+        className="logo"
+        onClick={() => {
+          const logoClick = { value: "Home" };
+          handleClick(logoClick);
+        }}
+      >
         <img
           src={require("./static/logo-black.png")}
           alt="logo-black"
