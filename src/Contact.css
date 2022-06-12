@@ -106,8 +106,7 @@ textarea {
   color: black;
 }
 
-b .Contact h1 {
-  font-size: 5vh;
-  padding: 0;
-  margin-bottom: 2vh;
+.email-me {
+  text-decoration: none;
+  color: inherit;
 }

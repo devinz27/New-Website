@@ -60,7 +60,9 @@ function Contact() {
                 className="email"
               />
               <span>
-                <a href="?">Email Me</a>
+                <a className="email-me" href="?">
+                  Email Me
+                </a>
               </span>
             </div>
           </div>
@@ -107,7 +109,7 @@ function Contact() {
               width="100%"
               height="100%"
               allowfullscreen=""
-              loading="lazy"
+              loading="auto"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
