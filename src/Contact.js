@@ -110,6 +110,7 @@ function Contact() {
               height="100%"
               allowfullscreen=""
               loading="auto"
+              title="toronto-map"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>

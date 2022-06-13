@@ -1,11 +1,8 @@
 import "./Nav.css";
-import React, { useState } from "react";
+import React from "react";
 
 function Nav({ handlePageSwitch, selected }) {
-  // const [selected, setSelected] = useState("Home");
-  console.log("asd", selected);
   function handleClick(list) {
-    // setSelected(list.value);
     console.log("qer,", list);
     handlePageSwitch(list.value);
   }

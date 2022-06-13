@@ -2,13 +2,20 @@ import "./About.css";
 import { useEffect, useState } from "react";
 
 function DateFact(url) {
+  console.log(url);
   const [fact, setFact] = useState({ data: null, loading: true });
   useEffect(() => {
     setFact({ data: null, loading: true });
     fetch(url)
-      .then((response) => response.text())
+      .then((response) => response.json())
+      // .then((text) => {
+      //   // const len = text.events.length;
+      //   // console.log(len);
+      //   console.log(text);
+      //   console.log(text.events[0].text);
+      // });
       .then((text) => {
-        setFact({ data: text, loading: false });
+        setFact({ data: text.events[0].text, loading: false });
       });
   }, [url]);
   return fact;
@@ -19,11 +26,14 @@ function GetDate() {
   let mm = today.getMonth() + 1;
   let dd = today.getDate();
   today = mm + "/" + dd;
+  console.log(today);
   return today;
 }
 
 function About() {
-  const fact = DateFact("http://numbersapi.com/" + GetDate() + "/date");
+  const fact = DateFact(
+    "https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/" + GetDate()
+  );
 
   console.log(fact);
   return (
@@ -133,7 +143,7 @@ function About() {
         </div>
         <div className="fact">
           <div className="fact-text">
-            <h2>DAILY FACT</h2>
+            <h2>DATE FACT</h2>
             <p>{fact.loading === false ? fact.data : ""}</p>
           </div>
         </div>

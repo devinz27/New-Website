@@ -1,6 +1,5 @@
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import Main from "./Main";
 
 function Home({ clickedContact }) {
   return (
