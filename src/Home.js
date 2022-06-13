@@ -15,7 +15,7 @@ function Home({ clickedContact }) {
               "Movie Binger",
               "Early Bird",
               "Frontend Developer",
-              "Fitness Enthusiasts",
+              "Fitness Enthusiast",
             ],
             autoStart: true,
             loop: true,
