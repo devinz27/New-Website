@@ -9,7 +9,14 @@ function Home({ clickedContact }) {
         <span className="home-line"></span>
         <Typewriter
           options={{
-            strings: ["CS Student", "Software Engineer", "Food Enjoyer"],
+            strings: [
+              "CS Student @ UWaterloo",
+              "Software Engineer",
+              "Movie Binger",
+              "Early Bird",
+              "Frontend Developer",
+              "Fitness Enthusiasts",
+            ],
             autoStart: true,
             loop: true,
             delay: 100,
