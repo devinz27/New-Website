@@ -33,3 +33,16 @@
   background-size: cover;
   background-position: bottom;
 }
+
+@media (max-width: 1180px) {
+  .profile {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+  .Main {
+    left: 0px;
+    right: 0px;
+  }
+}

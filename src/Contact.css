@@ -7,6 +7,7 @@
 .Contact::-webkit-scrollbar {
   display: none;
 }
+
 .contact-wrapper {
   padding-left: 6vw;
   padding-right: 6vw;
@@ -113,4 +114,28 @@ textarea {
 .email-me {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 850px) {
+  .contact-squares {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .contact-squares .contact-square {
+    width: 100%;
+  }
+  .contact-form {
+    flex-direction: column;
+  }
+  .left-contact-form {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  .right-contact-form {
+    width: 100%;
+    padding: 0px;
+    height: 300px;
+  }
 }

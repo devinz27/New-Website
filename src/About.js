@@ -112,7 +112,9 @@ function About() {
               <ul className="experience-ul">
                 <li>
                   <div className="date-li">
-                    <span>May 2022 - Present</span>
+                    <div className="date-li-wrapper">
+                      <span>May 2022 - Present</span>
+                    </div>
                   </div>
                   <div className="company-li">
                     <h3>View the Space</h3>
@@ -121,7 +123,9 @@ function About() {
                 </li>
                 <li>
                   <div className="date-li">
-                    <span>Sept 2019 - Dec 2022</span>
+                    <div className="date-li-wrapper">
+                      <span>Sept 2021 - Dec 2021</span>
+                    </div>
                   </div>
                   <div className="company-li">
                     <h3>Genesys</h3>
@@ -130,7 +134,9 @@ function About() {
                 </li>
                 <li>
                   <div className="date-li">
-                    <span>Jan 2019 - Apr 2021</span>
+                    <div className="date-li-wrapper">
+                      <span>Jan 2021 - Apr 2021</span>
+                    </div>
                   </div>
                   <div className="company-li">
                     <h3>Communitech</h3>

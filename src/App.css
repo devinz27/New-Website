@@ -28,3 +28,12 @@
   width: 70px;
   z-index: 10;
 }
+
+@media (max-width: 1180px) {
+  .right-border {
+    display: none;
+  }
+  .left-border {
+    display: none;
+  }
+}
