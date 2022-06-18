@@ -46,3 +46,9 @@
     right: 0px;
   }
 }
+
+@media (max-width: 850px) {
+  .Main {
+    bottom: 0px;
+  }
+}

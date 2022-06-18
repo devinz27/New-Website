@@ -154,7 +154,7 @@
 
 .date-li-wrapper {
   width: 50%;
-  padding: 0.3vh 1vw;
+  padding: 10px 25px;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 50px;
   font-size: 14px;
@@ -220,7 +220,7 @@
     width: 100%;
   }
   .date-li-wrapper {
-    width: 80%;
+    width: 70%;
     padding: 5px 10px;
   }
 }

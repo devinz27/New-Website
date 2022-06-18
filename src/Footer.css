@@ -21,11 +21,10 @@
 }
 
 .icon-wrapper {
-  /* height:2.5vw; */
+  width: 15vw;
   height: 100%;
-  width: 10vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -34,28 +33,41 @@
   height: 30%;
 }
 
-.facebook {
-  cursor: pointer;
+.icon-wrapper a {
+  display: flex;
   height: 30%;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 10%;
 }
 
+.facebook {
+  cursor: pointer;
+  height: 100%;
+}
 .instagram {
   cursor: pointer;
-  height: 30%;
+  height: 100%;
 }
 
 .linkedin {
   cursor: pointer;
-  height: 30%;
+  height: 100%;
 }
 
 .github {
   cursor: pointer;
-  height: 30%;
+  height: 100%;
 }
 
 @media (max-width: 1180px) {
   .Footer {
-    padding: 0;
+    /* padding: 0; */
+  }
+}
+
+@media (max-width: 850px) {
+  .Footer {
+    display: none;
   }
 }

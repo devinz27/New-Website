@@ -23,6 +23,9 @@ function Sidebar({ handlePageSwitch, sidebar, handleSideBar }) {
   return (
     <div className={(sidebar === "open" ? "open " : "closed ") + "Sidebar"}>
       <div className="sidebar-wrapper">
+        <div className="avatar">
+          <div className="avatar-image"></div>
+        </div>
         <div className="mobilenavbuttons">
           {buttonList.map((list) => (
             <button
@@ -36,6 +39,52 @@ function Sidebar({ handlePageSwitch, sidebar, handleSideBar }) {
               {list.value}
             </button>
           ))}
+        </div>
+        <div className="mobilesocial">
+          <a
+            href="https://www.facebook.com/devinzhou2/"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            <img
+              src={require("./static/facebook.png")}
+              alt="facebook"
+              className="mobilefacebook"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/devinzhou/"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            <img
+              src={require("./static/instagram.png")}
+              alt="instagram"
+              className="mobileinstagram"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/devinzhou"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            <img
+              src={require("./static/linkedin.png")}
+              alt="linkedin"
+              className="mobilelinkedin"
+            />
+          </a>
+          <a
+            href="https://www.github.com/devinz27"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            <img
+              src={require("./static/github.png")}
+              alt="github"
+              className="mobilegithub"
+            />
+          </a>
         </div>
       </div>
     </div>
