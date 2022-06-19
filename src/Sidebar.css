@@ -50,6 +50,8 @@
   text-align: end;
   font-size: 16px;
   margin-bottom: 7px;
+  padding: 0;
+  color: black;
 }
 
 .mobilesocial {
@@ -62,7 +64,6 @@
 .mobilesocial a {
   display: flex;
   height: 30%;
-  align-items: center;
   justify-content: flex-end;
   margin-left: 10%;
 }
