@@ -60,7 +60,7 @@ function Contact() {
                 className="email"
               />
               <span>
-                <a className="email-me" href="?">
+                <a className="email-me" href="mailto:devinzhou101@gmail.com">
                   Email Me
                 </a>
               </span>
