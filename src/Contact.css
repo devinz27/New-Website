@@ -2,6 +2,8 @@
   height: 100%;
   width: 100%;
   overflow-y: scroll;
+  animation: fadeInUp ease-in-out 500ms;
+  animation-fill-mode: forwards;
 }
 
 .Contact::-webkit-scrollbar {
