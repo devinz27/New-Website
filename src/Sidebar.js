@@ -2,9 +2,7 @@ import "./Sidebar.css";
 import React from "react";
 
 function Sidebar({ handlePageSwitch, sidebar, handleSideBar }) {
-  console.log(sidebar);
   function handleClick(list) {
-    console.log("qer,", list);
     handlePageSwitch(list.value);
   }
   function toggleSidebar() {

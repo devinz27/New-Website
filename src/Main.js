@@ -4,7 +4,6 @@ import About from "./About";
 import Contact from "./Contact";
 
 function Main({ page, switchToContact }) {
-  console.log(page);
   const callBackApp = (value) => {
     switchToContact(value);
   };

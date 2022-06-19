@@ -3,7 +3,6 @@ import React from "react";
 
 function Nav({ handlePageSwitch, selected }) {
   function handleClick(list) {
-    console.log("qer,", list);
     handlePageSwitch(list.value);
   }
 

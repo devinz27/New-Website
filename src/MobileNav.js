@@ -2,9 +2,7 @@ import "./MobileNav.css";
 import React from "react";
 
 function MobileNav({ handlePageSwitch, handleSideBar, current }) {
-  console.log(current);
   function handleClick(list) {
-    console.log("qer,", list);
     handlePageSwitch(list.value);
   }
 

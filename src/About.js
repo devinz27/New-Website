@@ -2,18 +2,11 @@ import "./About.css";
 import { useEffect, useState } from "react";
 
 function DateFact(url) {
-  console.log(url);
   const [fact, setFact] = useState({ data: null, loading: true });
   useEffect(() => {
     setFact({ data: null, loading: true });
     fetch(url)
       .then((response) => response.json())
-      // .then((text) => {
-      //   // const len = text.events.length;
-      //   // console.log(len);
-      //   console.log(text);
-      //   console.log(text.events[0].text);
-      // });
       .then((text) => {
         setFact({ data: text.events[0].text, loading: false });
       });
@@ -26,7 +19,6 @@ function GetDate() {
   let mm = today.getMonth() + 1;
   let dd = today.getDate();
   today = mm + "/" + dd;
-  console.log(today);
   return today;
 }
 
@@ -35,7 +27,6 @@ function About() {
     "https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/" + GetDate()
   );
 
-  console.log(fact);
   return (
     <div className="About">
       <div className="about-wrapper">
