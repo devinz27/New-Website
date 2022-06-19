@@ -19,7 +19,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1800);
 
     window.addEventListener("resize", resizeWidth); // Update the width on resize
 
