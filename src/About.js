@@ -1,30 +1,23 @@
 import "./About.css";
 import { useEffect, useState } from "react";
 
-function DateFact(url) {
-  const [fact, setFact] = useState({ data: null, loading: true });
+function RandomJoke(url) {
+  const [joke, setJoke] = useState({ data: null, loading: true });
   useEffect(() => {
-    setFact({ data: null, loading: true });
+    setJoke({ data: null, loading: true });
     fetch(url)
       .then((response) => response.json())
       .then((text) => {
-        setFact({ data: text.events[0].text, loading: false });
+        setJoke({ data: text.joke, loading: false });
       });
   }, [url]);
-  return fact;
-}
 
-function GetDate() {
-  let today = new Date();
-  let mm = today.getMonth() + 1;
-  let dd = today.getDate();
-  today = mm + "/" + dd;
-  return today;
+  return joke;
 }
 
 function About() {
-  const fact = DateFact(
-    "https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/" + GetDate()
+  const joke = RandomJoke(
+    "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
   );
 
   return (
@@ -104,7 +97,18 @@ function About() {
                 <li>
                   <div className="date-li">
                     <div className="date-li-wrapper">
-                      <span>May 2022 - Present</span>
+                      <span>Sep 2022 - Present</span>
+                    </div>
+                  </div>
+                  <div className="company-li">
+                    <h3>OANDA</h3>
+                    <span>Software Engineer Intern</span>
+                  </div>
+                </li>
+                <li>
+                  <div className="date-li">
+                    <div className="date-li-wrapper">
+                      <span>May 2022 - Aug 2022</span>
                     </div>
                   </div>
                   <div className="company-li">
@@ -140,8 +144,8 @@ function About() {
         </div>
         <div className="fact">
           <div className="fact-text">
-            <h2>DATE FACT</h2>
-            <p>{fact.loading === false ? fact.data : ""}</p>
+            <h2>FOR THE LAUGHS</h2>
+            <p>{joke.loading === false ? joke.data : ""}</p>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ function Home({ clickedContact }) {
               "Software Engineer",
               "Movie Binger",
               "Early Bird",
-              "Frontend Developer",
+              "Full-Stack Developer",
               "Fitness Enthusiast",
             ],
             autoStart: true,

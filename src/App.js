@@ -31,6 +31,7 @@ function App() {
     setSelected(value);
   };
   const switchToContact = (value) => {
+    console.log(value);
     setPage(value);
     setSelected(value);
   };
