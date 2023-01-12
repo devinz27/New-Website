@@ -63,7 +63,11 @@ function About() {
                 </li>
                 <li>
                   <span className="first-li">Email:</span>
-                  <span className="second-li">devinzhou101@gmail.com</span>
+                  <span className="second-li">
+                    <a href="mailto:devinzhou101@gmail.com">
+                      devinzhou101@gmail.com
+                    </a>
+                  </span>
                 </li>
                 <li>
                   <span className="first-li">Phone:</span>
@@ -97,7 +101,7 @@ function About() {
                 <li>
                   <div className="date-li">
                     <div className="date-li-wrapper">
-                      <span>Sep 2022 - Present</span>
+                      <span>Sep 2022 - Dec 2022</span>
                     </div>
                   </div>
                   <div className="company-li">

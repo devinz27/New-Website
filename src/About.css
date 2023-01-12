@@ -78,6 +78,11 @@
   display: inline-block;
 }
 
+.second-li a{
+  text-decoration: none;
+  color:black;
+}
+
 .experiences {
   width: 100%;
   margin-bottom: 55px;
@@ -155,7 +160,7 @@
 }
 
 .date-li-wrapper {
-  width: 50%;
+  width: 65%;
   padding: 10px 25px;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 50px;

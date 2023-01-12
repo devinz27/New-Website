@@ -53,18 +53,16 @@ function Contact() {
             </div>
           </div>
           <div className="contact-square">
-            <div className="inner-square">
-              <img
-                src={require("./static/email.png")}
-                alt="email"
-                className="email"
-              />
-              <span>
-                <a className="email-me" href="mailto:devinzhou101@gmail.com">
-                  Email Me
-                </a>
-              </span>
-            </div>
+            <a className="email-me" href="mailto:devinzhou101@gmail.com">
+              <div className="inner-square">
+                <img
+                  src={require("./static/email.png")}
+                  alt="email"
+                  className="email"
+                />
+                <span>Email Me</span>
+              </div>
+            </a>
           </div>
           <div className="contact-square">
             <div className="inner-square">
