@@ -15,6 +15,25 @@ function RandomJoke(url) {
   return joke;
 }
 
+function Experience(companyName, position) {
+  return (
+    <div className="company-li">
+      <h3>{companyName}</h3>
+      <span>{position}</span>
+    </div>
+  );
+}
+
+function ExperienceDate(date) {
+  return (
+    <div className="date-li">
+      <div className="date-li-wrapper">
+        <span>{date}</span>
+      </div>
+    </div>
+  );
+}
+
 function About() {
   const joke = RandomJoke(
     "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
@@ -99,48 +118,24 @@ function About() {
               </div>
               <ul className="experience-ul">
                 <li>
-                  <div className="date-li">
-                    <div className="date-li-wrapper">
-                      <span>Sep 2022 - Dec 2022</span>
-                    </div>
-                  </div>
-                  <div className="company-li">
-                    <h3>OANDA</h3>
-                    <span>Software Engineer Intern</span>
-                  </div>
+                  {ExperienceDate("May 2023 - Present")}
+                  {Experience("Wonolo", "Backend Developer Intern")}
                 </li>
                 <li>
-                  <div className="date-li">
-                    <div className="date-li-wrapper">
-                      <span>May 2022 - Aug 2022</span>
-                    </div>
-                  </div>
-                  <div className="company-li">
-                    <h3>View the Space</h3>
-                    <span>Software Engineer Intern</span>
-                  </div>
+                  {ExperienceDate("Sep 2022 - Dec 2022")}
+                  {Experience("OANDA", "Software Engineer Intern")}
                 </li>
                 <li>
-                  <div className="date-li">
-                    <div className="date-li-wrapper">
-                      <span>Sept 2021 - Dec 2021</span>
-                    </div>
-                  </div>
-                  <div className="company-li">
-                    <h3>Genesys</h3>
-                    <span>Software Developer Intern</span>
-                  </div>
+                  {ExperienceDate("May 2022 - Aug 2022")}
+                  {Experience("View the Space", "Software Engineer Intern")}
                 </li>
                 <li>
-                  <div className="date-li">
-                    <div className="date-li-wrapper">
-                      <span>Jan 2021 - Apr 2021</span>
-                    </div>
-                  </div>
-                  <div className="company-li">
-                    <h3>Communitech</h3>
-                    <span>Web Developer Intern</span>
-                  </div>
+                  {ExperienceDate("Sep 2021 - Dec 2021")}
+                  {Experience("Genesys", "Software Developer Intern")}
+                </li>
+                <li>
+                  {ExperienceDate("Jan 2021 - Apr 2021")}
+                  {Experience("Communitech", "Web Developer Intern")}
                 </li>
               </ul>
             </div>

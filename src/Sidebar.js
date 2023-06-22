@@ -1,6 +1,7 @@
 import "./Sidebar.css";
 import React from "react";
 
+// Mobile or Smaller Screen Sizes only
 function Sidebar({ handlePageSwitch, sidebar, handleSideBar }) {
   function handleClick(list) {
     handlePageSwitch(list.value);
@@ -17,6 +18,7 @@ function Sidebar({ handlePageSwitch, sidebar, handleSideBar }) {
     { value: "Home" },
     { value: "About" },
     { value: "Contact" },
+    { value: "Resume" },
   ];
   return (
     <div className={(sidebar === "open" ? "open " : "closed ") + "Sidebar"}>

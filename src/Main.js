@@ -2,6 +2,7 @@ import "./Main.css";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import Resume from "./Resume";
 
 function Main({ page, switchToContact }) {
   const callBackApp = (value) => {
@@ -17,8 +18,10 @@ function Main({ page, switchToContact }) {
           <Home clickedContact={callBackApp}></Home>
         ) : page === "About" ? (
           <About></About>
-        ) : (
+        ) : page === "Contact" ? (
           <Contact></Contact>
+        ) : (
+          <Resume></Resume>
         )}
       </div>
     </div>

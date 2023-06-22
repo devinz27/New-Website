@@ -10,6 +10,7 @@ function Nav({ handlePageSwitch, selected }) {
     { value: "Home" },
     { value: "About" },
     { value: "Contact" },
+    { value: "Resume" },
   ];
   return (
     <div className="Nav">

@@ -30,6 +30,8 @@ function App() {
     setPage(value);
     setSelected(value);
   };
+
+  // used for button on home page
   const switchToContact = (value) => {
     console.log(value);
     setPage(value);
