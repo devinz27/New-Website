@@ -118,7 +118,7 @@ function About() {
               </div>
               <ul className="experience-ul">
                 <li>
-                  {ExperienceDate("May 2023 - Present")}
+                  {ExperienceDate("May 2023 - Aug 2023")}
                   {Experience("Wonolo", "Backend Developer Intern")}
                 </li>
                 <li>
